@@ -1,0 +1,24 @@
+.weatherApp {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+.enterCity {
+  background: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
+}
+.searchButton {
+  background: #885df1;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: white;
+}
