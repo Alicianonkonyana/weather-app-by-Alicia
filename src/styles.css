@@ -1,8 +1,8 @@
-.weatherApp {
+.searchForm {
   text-align: center;
 }
 
-p {
+.coderDetails {
   text-align: center;
 }
 .enterCity {
@@ -12,6 +12,7 @@ p {
   font-size: 16px;
   margin-left: 5px;
   border-radius: 6px;
+  color: black;
 }
 .searchButton {
   background: #885df1;

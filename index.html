@@ -8,31 +8,44 @@
   </head>
   <body>
     <div>
-      <form class="weatherApp">
-        <input
-          class="enterCity"
-          type="text"
-          placeholder="Enter  a city..."
-          autofocus
-        />
-        <input class="searchButton" type="submit" value="search" />
-      </form>
-      <p>
-        Coded by
-        <a href=" https://github.com/Alicianonkonyana" target="_blank"
-          >Alicia Nonkonyana</a
-        >
-        is
-        <a
-          href="https://github.com/Alicianonkonyana/weather-app-by-Alicia "
-          target="_blank"
-          >open-sourced on Github</a
-        >
-        and
-        <a href=" https://weather-app-by-alicia.netlify.app/" target="_blank"
-          >hosted on netlify</a
-        >
-      </p>
+      <header>
+        <form class="searchForm">
+          <input
+            class="enterCity"
+            type="text"
+            placeholder="Enter  a city..."
+            autofocus
+            required
+          />
+          <input class="searchButton" type="submit" value="search" />
+        </form>
+      </header>
+      <main>
+        <h1>Miami</h1>
+        <h2>☀️22&deg</h2>
+        <p class="weatherDetails">
+          Monday 9:51, scattered clouds <br />
+          Humidity: <strong>75%</strong>, Wind:<strong>7.2km/h</strong>
+        </p>
+      </main>
+      <footer>
+        <p class="coderDetails">
+          Coded by
+          <a href=" https://github.com/Alicianonkonyana" target="_blank"
+            >Alicia Nonkonyana</a
+          >
+          is
+          <a
+            href="https://github.com/Alicianonkonyana/weather-app-by-Alicia "
+            target="_blank"
+            >open-sourced on Github</a
+          >
+          and
+          <a href=" https://weather-app-by-alicia.netlify.app/" target="_blank"
+            >hosted on netlify</a
+          >
+        </p>
+      </footer>
     </div>
     <script src="src/app.js"></script>
   </body>
