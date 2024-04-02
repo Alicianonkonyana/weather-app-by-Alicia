@@ -19,8 +19,9 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div>
-      <header>
+    <div class="weather-apps">
+
+ <header>
         <form class="searchForm">
           <input
             class="enterCity"
@@ -33,14 +34,15 @@
         </form>
       </header>
       <main>
-        <h1>Miami</h1>
-        <div class="currentWeather">
-          <h2>☀️22&deg</h2>
-        </div>
-
-        <p class="weatherDetails">
+        <div class="current-weather-forecast">
+          <h1>Miami</h1>
+        
+          <h2> <span class="weather-forecast-icon">☀️ </span><span class="weather-forecast-value">22</span ><span class="weather-forecast-unit">&degC</span></h2>
+          </div>
+        
+         <p class="weatherDetails">
           Monday 9:51, scattered clouds <br />
-          Humidity: <strong>75%</strong>, Wind:<strong>7.2km/h</strong>
+          Humidity: <span class="humidity-value"><strong>75%</strong></span>,Wind:<span class="wind-speed-value"><strong>7.2km/h</strong> </span> 
         </p>
         <ul>
           <li>
