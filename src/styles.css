@@ -80,10 +80,20 @@ h2 {
   font-size: 28px;
   position: relative;
   top: -38px;
+  margin-right: 10px;
 }
 .humidity-value {
   color: #f65282;
 }
 .wind-speed-value {
   color: #f65282;
+}
+ul {
+  list-style: none;
+}
+.forecast-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 40px;
 }

@@ -20,43 +20,54 @@
   </head>
   <body>
     <div class="weather-apps">
-
- <header>
-        <form class="searchForm">
+      <header>
+        <form id="search-form" class="search-form">
           <input
             class="enterCity"
             type="text"
             placeholder="Enter  a city..."
             autofocus
             required
+            id="search-input"
           />
           <input class="searchButton" type="submit" value="search" />
         </form>
       </header>
       <main>
         <div class="current-weather-forecast">
-          <h1>Miami</h1>
-        
-          <h2> <span class="weather-forecast-icon">☀️ </span><span class="weather-forecast-value">22</span ><span class="weather-forecast-unit">&degC</span></h2>
-          </div>
-        
-         <p class="weatherDetails">
+          <h1 id="city-input">Miami</h1>
+
+          <h2>
+            <span class="weather-forecast-icon">☀️ </span
+            ><span class="weather-forecast-value">22</span
+            ><span class="weather-forecast-unit">&degC</span>
+          </h2>
+        </div>
+
+        <p class="weatherDetails">
           Monday 9:51, scattered clouds <br />
-          Humidity: <span class="humidity-value"><strong>75%</strong></span>,Wind:<span class="wind-speed-value"><strong>7.2km/h</strong> </span> 
+          Humidity: <span class="humidity-value"><strong>75%</strong></span
+          >,Wind:<span class="wind-speed-value"><strong>7.2km/h</strong> </span>
         </p>
         <ul>
-          <li>
-            🌥️Sun
-            <br />15&deg 29&deg
-          </li>
-          <li>☀️Mon <br />20&deg 40&deg</li>
-          <li>
-            🌄Tue <br />
-            22&deg 44&deg
-            <li>🌦️Wed <br>15&deg 34&deg</li>
-            <li>⛈️Thur <br>33&deg 34&deg</li>
-            <li>🌥️Fri <br>37&deg 44&deg</li>
-          </li>
+          <div class="forecast-list">
+            <li>
+              🌥️Sun
+              <br />15&deg 29&deg
+            </li>
+            <li>☀️Mon <br />20&deg 40&deg</li>
+            <li>
+              🌄Tue <br />
+              22&deg 44&deg
+            </li>
+
+            <li>
+              Wed <br />
+              ⛈️<br />15&deg 34&deg
+            </li>
+            <li>⛈️Thur <br />33&deg 34&deg</li>
+            <li>🌥️Fri <br />37&deg 44&deg</li>
+          </div>
         </ul>
       </main>
       <footer>
