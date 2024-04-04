@@ -40,7 +40,8 @@
 
           <h2>
             <span class="weather-forecast-icon">☀️ </span
-            ><span class="weather-forecast-value">22</span
+            ><span class="weather-forecast-value" id="current-temperature"
+              >22</span
             ><span class="weather-forecast-unit">&degC</span>
           </h2>
         </div>
@@ -52,23 +53,23 @@
           >,Wind:<span class="wind-speed-value"><strong>7.2km/h</strong> </span>
         </p>
         <ul>
-          <div class="forecast-list">
-            <li>
-              🌥️Sun
-              <br />15&deg 29&deg
-            </li>
-            <li>☀️Mon <br />20&deg 40&deg</li>
-            <li>
-              🌄Tue <br />
-              22&deg 44&deg
-            </li>
-
-            <li>
-              Wed <br />
-              ⛈️<br />15&deg 34&deg
-            </li>
-            <li>⛈️Thur <br />33&deg 34&deg</li>
-            <li>🌥️Fri <br />37&deg 44&deg</li>
+          <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-day">Sun</div>
+                <div class="weather-forecast-icon">
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/674/original/rain-day.png?1712214580"
+                    alt="rainy day"
+                  />
+                </div>
+                <div class="weather-forecast-values">
+                  <span class="weather-forecast-min"
+                    ><strong>15&deg</strong></span
+                  ><span class="weather-forecast-max">24&deg </span>
+                </div>
+              </div>
+            </div>
           </div>
         </ul>
       </main>
