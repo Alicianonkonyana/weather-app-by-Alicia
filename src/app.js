@@ -50,3 +50,27 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Fri", "Sat", "Sun", "Mon"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-date">${day}</div>
+             <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/676/original/clear-sky-day.png?1712214600"
+                alt="sunny day"
+                width="50px"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"
+                  ><strong>13&deg</strong></span
+                >
+                <span class="weather-forecast-temperature-min">12&deg</span>
+              </div>`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
