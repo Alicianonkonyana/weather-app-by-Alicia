@@ -121,6 +121,7 @@ ul {
   color: #f65282;
 }
 img {
+  width: 24px;
   position: relative;
   top: 20px;
   right: 40px;
