@@ -50,7 +50,12 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "803fb1e4t6f6d9bf33a5f49fo2ada403";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let days = ["Fri", "Sat", "Sun", "Mon"];
   let forecastHtml = "";
@@ -69,8 +74,8 @@ function displayForecast() {
                 >
                 <span class="weather-forecast-temperature-min">12&deg</span>
               </div>`;
+    getForecast(response.data.city);
   });
   forecastElement.innerHTML = forecastHtml;
 }
-
-displayForecast();
+getForecast("Paris");
